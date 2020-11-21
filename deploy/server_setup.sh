@@ -14,7 +14,7 @@ locale-gen en_GB.UTF-8
 # Install Python, SQLite and pip
 echo "Installing dependencies..."
 apt-get update
-apt-get install -y python3-dev python3-venv sqlite python-pip supervisor nginx git
+apt-get install -y python3-dev python3-venv sqlite python3-pip supervisor nginx git
 
 mkdir -p $PROJECT_BASE_PATH
 git clone $PROJECT_GIT_URL $PROJECT_BASE_PATH/profiles-rest-api
@@ -25,7 +25,7 @@ sudo apt install python3-pip
 python3 -m venv $VIRTUALENV_BASE_PATH/firstBackend_api
 
 
-$VIRTUALENV_BASE_PATH/profiles_api/bin/pip install -r $PROJECT_BASE_PATH/FirstProject/requirements.txt
+$VIRTUALENV_BASE_PATH/profiles_api/bin/pip3 install -r $PROJECT_BASE_PATH/FirstProject/requirements.txt
 
 # Run migrations
 cd $PROJECT_BASE_PATH/FirstProject/src
