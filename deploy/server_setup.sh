@@ -17,7 +17,7 @@ apt-get update
 apt-get install -y python3-dev python3-venv sqlite python3-pip supervisor nginx git
 
 mkdir -p $PROJECT_BASE_PATH
-git clone $PROJECT_GIT_URL $PROJECT_BASE_PATH/profiles-rest-api
+git clone $PROJECT_GIT_URL $PROJECT_BASE_PATH/FirstProject
 
 mkdir -p $VIRTUALENV_BASE_PATH
 sudo apt install python3-pip
