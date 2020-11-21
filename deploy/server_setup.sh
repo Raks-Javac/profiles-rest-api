@@ -25,7 +25,7 @@ sudo apt install python3-pip
 python3 -m venv $VIRTUALENV_BASE_PATH/firstBackend_api
 
 
-$VIRTUALENV_BASE_PATH/profiles_api/bin/pip3 install -r $PROJECT_BASE_PATH/FirstProject/requirements.txt
+$VIRTUALENV_BASE_PATH/profiles_api/bin/pip install -r $PROJECT_BASE_PATH/FirstProject/requirements.txt
 
 # Run migrations
 cd $PROJECT_BASE_PATH/FirstProject/src
